@@ -17,6 +17,7 @@ export default function ExploreBtn() {
           alt="arrow-down"
           width={24}
           height={24}
+          className="w-[24] h-[24]"
         />
       </a>
     </button>

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -130,6 +131,10 @@
   ul {
     @apply list-disc list-inside;
   }
+  img {
+    width: auto;
+    height: auto;
+  }
 }
 
 @layer components {
@@ -169,13 +174,17 @@
 
   .events {
     @apply grid md:grid-cols-3 gap-10 sm:grid-cols-2 grid-cols-1;
+
+    li {
+      @apply list-none;
+    }
   }
 
   #event-card {
     @apply flex flex-col gap-3;
 
     .poster {
-      @apply h-[300px] w-full rounded-lg object-cover;
+      @apply rounded-lg object-cover;
     }
 
     .title {
